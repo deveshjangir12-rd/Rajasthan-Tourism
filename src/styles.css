@@ -6,3 +6,111 @@
 @media(max-width:700px){.city-hero{height:630px;min-height:600px;max-height:calc(100svh - 70px)}.city-hero-image{object-position:62% center}.city-hero-fade{background:linear-gradient(90deg,rgba(255,250,241,.97),rgba(255,250,241,.8) 56%,rgba(255,250,241,.12)),linear-gradient(0deg,rgba(255,250,241,.88),transparent 45%)}.city-hero-content{padding:20px 6%}.city-page .breadcrumb{margin-bottom:65px}.city-hero h1{font-size:58px}.city-hero-content>p{max-width:310px}.city-stats{gap:0}.city-stats>div{padding:0 9px}.city-stats small{font-size:8px}.city-stats strong{font-size:9px}.city-save{margin-top:18px}.city-quicknav{border-radius:0;margin:0;padding:9px 10px;gap:5px}.city-quicknav a{font-size:9px;padding:9px 7px}.city-quicknav .quick-plan{display:none}.city-page .section{padding:26px 16px}.city-overview{grid-template-columns:1fr;gap:17px}.city-about>img{height:170px}.city-facts{padding:18px}.city-facts-grid{gap:14px 8px}.city-fact{gap:7px}.fact-icon{width:32px;height:32px;flex-basis:32px}.city-section-head{align-items:flex-start;flex-direction:column;gap:7px}.city-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.city-photo-card{height:205px}.city-photo-card:last-child{display:none}.activity-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.activity-card>img{height:115px}.city-info-grid{grid-template-columns:1fr;gap:12px}.info-panel:last-child{grid-column:auto}.city-feature-row{grid-template-columns:1fr;gap:12px}.itinerary-feature,.food-feature{padding:20px;min-height:auto}.food-bubbles{gap:7px}.food-bubbles span{font-size:8px}.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.gallery-grid img{height:125px}.gallery-grid img:last-child{display:none}.city-page .related-grid{grid-template-columns:1fr 1fr}.city-page .related-grid .destination-card:nth-child(3){display:none}.newsletter{margin:18px 12px 0;padding:20px;border-radius:18px;display:grid;grid-template-columns:42px 1fr;gap:12px}.newsletter-icon{width:42px;height:42px;flex-basis:42px}.newsletter form{grid-column:1/-1;width:100%;margin:0}.newsletter input{min-width:0;flex:1;width:50%}.newsletter button{padding:0 10px}.city-page .footer-top{grid-template-columns:1fr 1fr}.city-page .footer-top>div:first-child{grid-column:1/-1}}
 
 @media(max-width:700px){.header{height:68px}.nav-wrap{gap:14px}.nav{display:flex!important;position:static;overflow-x:auto;white-space:nowrap;flex:1;min-width:0;gap:15px;padding:0;background:transparent;border:0;flex-direction:row;align-items:center;font-size:10px;scrollbar-width:none}.nav::-webkit-scrollbar{display:none}.nav a{flex:0 0 auto}.nav a:nth-child(4),.nav a:nth-child(6),.nav a:nth-child(7){display:none}.nav-cta{padding:9px 11px}.mobile-toggle{display:none}}
+
+
+/* Modern Rajasthan refresh: warmer desert palette, cleaner hierarchy and consistent rounded geometry */
+:root{
+  --paper:#fbf7f0;--ink:#202e31;--muted:#697477;--gold:#c59a58;
+  --terracotta:#b65f43;--navy:#183a43;--line:rgba(32,46,49,.12);
+}
+body{background:var(--paper);color:var(--ink)}
+.header{background:rgba(251,247,240,.92);border-bottom:1px solid rgba(32,46,49,.09)}
+.brand-mark{border-radius:12px;background:#f1e5d2;border-color:rgba(181,95,67,.35);color:#9f4e35}
+.nav-cta{border-radius:999px;background:#183a43;color:#fff!important;border-color:#183a43;padding:12px 18px}
+.nav-cta:hover{background:#28545d;color:#fff!important}
+.hero{isolation:isolate;min-height:660px;border-radius:0 0 30px 30px}
+.hero-art img{filter:saturate(.9) contrast(1.04);object-position:center 48%}
+.hero-shade{background:linear-gradient(90deg,rgba(15,35,39,.79) 0%,rgba(15,35,39,.56) 43%,rgba(15,35,39,.1) 100%),linear-gradient(0deg,rgba(15,35,39,.38),transparent 34%)}
+.hero h1{max-width:780px;text-shadow:0 2px 30px rgba(0,0,0,.12)}
+.hero .button-dark{border-radius:999px;padding:16px 22px;background:#f4dfbd;color:#24393b}
+.section{padding-top:88px;padding-bottom:88px}
+.destinations-section{background:#f0e6d8;border-radius:30px;margin-top:24px;margin-bottom:24px}
+.destination-grid{gap:28px 22px}
+.destination-card{padding:0 0 16px;border-radius:20px;overflow:hidden;background:rgba(255,255,255,.74);border:1px solid rgba(83,70,52,.08);box-shadow:0 8px 24px rgba(49,42,31,.045);transition:transform .3s,box-shadow .3s}
+.destination-card:hover{transform:translateY(-5px);box-shadow:0 16px 36px rgba(49,42,31,.11)}
+.destination-card .card-image{aspect-ratio:.92;border-radius:0 0 16px 16px;background:#d6c4a9}
+.destination-card .card-meta,.destination-card h3,.destination-card>p{margin-left:17px;margin-right:17px}
+.destination-card h3{font-size:26px;margin-top:11px}
+.destination-card p{line-height:1.6}
+.experience-card{border-radius:22px;overflow:hidden;background:#fff;border:1px solid rgba(83,70,52,.08);box-shadow:0 8px 24px rgba(49,42,31,.05);padding-bottom:18px}
+.experience-image{overflow:hidden;border-radius:0 0 16px 16px}
+.experience-card h3,.experience-card p{margin-left:18px;margin-right:18px}
+.experience-card h3{margin-top:17px}
+.plan-section{border-radius:28px;background:#e9ddca;margin-bottom:36px;text-align:center}
+.plan-section .button{border-radius:999px}
+.city-hero{border-radius:0 0 28px 28px;overflow:hidden;background:#cbb79b}
+.city-hero-image{filter:saturate(.9) contrast(1.03)}
+.city-hero-fade{background:linear-gradient(90deg,rgba(251,247,240,.97) 0%,rgba(251,247,240,.84) 39%,rgba(251,247,240,.28) 72%,rgba(251,247,240,.06) 100%),linear-gradient(0deg,rgba(251,247,240,.7),transparent 34%)}
+.city-hero-content{max-width:1500px}
+.city-hero h1{color:#20373b;text-shadow:none}
+.city-hero-content>p{color:#46585b}
+.city-stats>div{border-color:rgba(32,46,49,.16)}
+.city-stats small{color:#667477}
+.city-stats strong{color:#263c40}
+.city-save{border-radius:999px;background:#fff;border:1px solid rgba(32,46,49,.15);box-shadow:0 5px 18px rgba(32,46,49,.08)}
+.city-quicknav{border-radius:999px;background:rgba(255,255,255,.92);border:1px solid rgba(32,46,49,.08);box-shadow:0 8px 28px rgba(32,46,49,.06);margin-top:18px}
+.city-quicknav a{border-radius:999px;transition:background .2s,color .2s}
+.city-quicknav a:hover{background:#f0e5d4;color:#914a35}
+.city-quicknav .quick-plan{background:#183a43;color:#fff}
+.city-overview{gap:32px}
+.city-about>img{height:220px;border-radius:18px}
+.city-facts,.info-panel,.activity-card{border-radius:18px;box-shadow:0 10px 28px rgba(32,46,49,.055);border-color:rgba(32,46,49,.08)}
+.city-facts h3{color:#9f563d}
+.fact-icon,.round-icon{background:#f8efe2;border-color:#ead8bf;color:#a45c3d;border-radius:12px}
+.city-photo-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.city-photo-card{height:245px;border-radius:18px;background:#d6c4a9}
+.photo-card-shade{background:linear-gradient(0deg,rgba(13,35,40,.88),rgba(13,35,40,.04) 82%)}
+.photo-rank{bottom:auto;top:12px;left:12px;width:30px;height:30px;border-radius:10px;color:#183a43}
+.city-photo-copy{padding:16px}
+.city-photo-copy h3{font-size:17px}
+.city-photo-copy p{font-size:10px;line-height:1.6}
+.activity-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.activity-card{overflow:hidden;transition:transform .25s,box-shadow .25s}
+.activity-card:hover{transform:translateY(-4px);box-shadow:0 14px 28px rgba(32,46,49,.1)}
+.activity-card>img{height:145px}
+.activity-copy{padding:16px}
+.activity-copy h3{font-size:14px;line-height:1.35}
+.activity-copy p{font-size:11px;line-height:1.7}
+.city-info-grid{gap:18px}
+.info-panel{padding:24px}
+.info-panel h2{font-size:23px}
+.shopping-row img{width:46px;height:46px;border-radius:12px}
+.shopping-row strong,.season-row strong,.reach-row strong{font-size:12px}
+.shopping-row span,.season-row span:not(.round-icon),.reach-row span:not(.round-icon){font-size:10px;line-height:1.65}
+.itinerary-feature,.food-feature{border-radius:22px;padding:28px}
+.food-feature{background:linear-gradient(145deg,#173b43,#244c50)}
+.feature-link{border-radius:999px;padding:10px 14px}
+.food-bubbles img{border-radius:16px;border:2px solid rgba(231,189,125,.42);aspect-ratio:1.1}
+.gallery-grid{gap:14px}
+.gallery-grid img{height:155px;border-radius:16px}
+.city-page .related-grid .card-image{border-radius:0 0 16px 16px}
+.footer{border-radius:28px 28px 0 0;overflow:hidden}
+.button,.under-link,.newsletter button{border-radius:999px}
+@media(max-width:1000px){
+ .city-photo-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .activity-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .city-quicknav{border-radius:18px}
+}
+@media(max-width:700px){
+ .hero{min-height:650px;height:calc(100svh - 68px);border-radius:0 0 22px 22px}
+ .hero-content{padding:100px 7% 95px}
+ .section{padding-top:58px;padding-bottom:58px}
+ .destinations-section{border-radius:22px;margin:12px 0;padding-left:16px;padding-right:16px}
+ .destination-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+ .destination-card{border-radius:16px}
+ .destination-card .card-image{aspect-ratio:.8}
+ .destination-card h3{font-size:20px}
+ .destination-card .card-meta{font-size:7px}
+ .city-hero{border-radius:0 0 22px 22px}
+ .city-hero-fade{background:linear-gradient(90deg,rgba(251,247,240,.96),rgba(251,247,240,.78) 58%,rgba(251,247,240,.18)),linear-gradient(0deg,rgba(251,247,240,.82),transparent 48%)}
+ .city-hero h1{color:#20373b}
+ .city-quicknav{border-radius:15px;margin:12px 10px 0}
+ .city-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .city-photo-card{height:220px;border-radius:15px}
+ .activity-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .activity-card{border-radius:15px}
+ .activity-card>img{height:115px}
+ .info-panel{border-radius:16px;padding:19px}
+ .itinerary-feature,.food-feature{border-radius:18px}
+ .gallery-grid img{border-radius:13px}
+}
