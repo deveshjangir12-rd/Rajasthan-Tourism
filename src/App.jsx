@@ -4,7 +4,7 @@ import {ArrowRight,ArrowUpRight,CalendarDays,Compass,Heart,MapPin,Plane,Train,Ca
 import {destinations} from './data';
 
 const photos = {
- jaipur:['photo-1599661046827-dacff0c0f09a','photo-1477587458883-47145ed94245','photo-1606293926075-69a00db08721','photo-1602643163983-ed0babc39797','photo-1599661046827-dacff0c0f09a','photo-1603262110263-fb0112e7cc33'],
+ jaipur:['photo-1578999935853-4ec5fa6c1f60','photo-1477587458883-47145ed94245','photo-1606293926075-69a00db08721','photo-1602643163983-ed0babc39797','photo-1599661046827-dacff0c0f09a','photo-1603262110263-fb0112e7cc33'],
  udaipur:['photo-1602216056096-3b40cc0c9944','photo-1577083552431-6e5fd01aa342','photo-1501785888041-af3ef285b470','photo-1470770841072-f978cf4d019e','photo-1602216056096-3b40cc0c9944','photo-1577083552431-6e5fd01aa342'],
  'mount-abu':['photo-1501785888041-af3ef285b470','photo-1470770841072-f978cf4d019e','photo-1500530855697-b586d89ba3ee','photo-1511497584788-876760111969','photo-1501785888041-af3ef285b470','photo-1470770841072-f978cf4d019e'],
  jawai:['photo-1472396961693-142e6e269027','photo-1511497584788-876760111969','photo-1500530855697-b586d89ba3ee','photo-1472396961693-142e6e269027','photo-1511497584788-876760111969','photo-1500530855697-b586d89ba3ee'],
@@ -13,7 +13,7 @@ const photos = {
  jodhpur:['photo-1599661046827-dacff0c0f09a','photo-1477587458883-47145ed94245','photo-1606293926075-69a00db08721','photo-1602643163983-ed0babc39797','photo-1599661046827-dacff0c0f09a','photo-1477587458883-47145ed94245'],
  bikaner:['photo-1606293926075-69a00db08721','photo-1599661046827-dacff0c0f09a','photo-1477587458883-47145ed94245','photo-1509316785289-025f5b846b35','photo-1606293926075-69a00db08721','photo-1599661046827-dacff0c0f09a']
 };
-const img=(id,w)=>'https://images.unsplash.com/'+id+'?auto=format&fit=crop&w='+(w||900)+'&q=85';
+const img=(id,w)=>'/images/photos/'+id+'.jpg';
 const pics=d=>(photos[d.slug]||photos.jaisalmer).map((p,i)=>img(p,i===0?1800:850));
 function Header(){return <header className="header"><div className="nav-wrap"><Link to="/" className="brand"><span className="brand-mark"><Landmark size={24}/></span><span><b>Rajasthan</b><small>Timeless Royalty</small></span></Link><nav className="nav"><Link to="/">Home</Link><a href="/#destinations">Destinations⌄</a><a href="/#experiences">Experiences⌄</a><a href="/#story">Culture</a><a href="/#plan">Travel Guide</a><a href="/#journal">Blog</a><a href="/#about">About Us</a><a className="nav-cta" href="/#plan">Plan Your Trip ↗</a></nav></div></header>}
 function Footer(){return <footer className="footer"><div className="footer-top"><div><Link to="/" className="brand"><span className="brand-mark">R</span><span><b>Rajasthan Tourism</b><small>Timeless Royalty</small></span></Link><p className="footer-copy">Discover royal heritage, vibrant culture and unforgettable experiences across Rajasthan.</p></div><div><span className="eyebrow">EXPLORE</span><Link to="/">Destinations</Link><a href="/#experiences">Experiences</a><a href="/#story">Culture</a></div><div><span className="eyebrow">POPULAR DESTINATIONS</span>{destinations.slice(0,5).map(d=><Link key={d.slug} to={'/destinations/'+d.slug}>{d.name}</Link>)}</div><div><span className="eyebrow">TRAVEL INFORMATION</span><a href="/#plan">Best Time to Visit</a><a href="/#plan">Travel Tips</a><a href="/#plan">Plan Your Trip</a></div></div><div className="footer-bottom"><span>© {new Date().getFullYear()} Rajasthan Tourism. All rights reserved.</span><span>Made for curious travellers ✳</span></div></footer>}
