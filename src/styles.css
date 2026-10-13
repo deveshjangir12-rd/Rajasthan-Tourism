@@ -156,3 +156,136 @@ body{background:var(--paper);color:var(--ink)}
 .city-quicknav a{white-space:nowrap}
 @media(max-width:900px){.local-tips-grid{grid-template-columns:1fr}.local-tip-card{padding:20px}.city-quicknav{position:relative;top:auto}.city-stats{flex-wrap:wrap}}
 @media(max-width:700px){.local-tips-section{padding:48px 18px}.local-tips-heading{text-align:left}.local-tips-heading>p{margin-left:0}.local-tip-card{grid-template-columns:38px 1fr 16px;gap:12px;border-radius:16px}.city-hero-content{padding-top:44px;padding-bottom:38px}.city-hero h1{font-size:clamp(46px,13vw,70px)}.city-stats>div{min-width:42%;margin-right:8px;padding-right:8px}.city-quicknav{display:flex;overflow-x:auto;justify-content:flex-start}.city-quicknav a{flex-shrink:0}}
+
+/* Modern layout refinement — shared grid, readable measure, and mobile navigation */
+.header{height:78px;background:rgba(250,247,241,.9);border-bottom:1px solid rgba(35,53,51,.09);box-shadow:0 5px 24px rgba(34,42,38,.025)}
+.nav-wrap{max-width:1440px;padding-inline:clamp(20px,5vw,76px)}
+.brand{gap:12px;letter-spacing:0}
+.brand b{font-size:14px;letter-spacing:.11em}
+.brand small{font-size:9px;letter-spacing:.2em}
+.nav{gap:clamp(13px,2vw,27px);font-size:12px}
+.nav a{white-space:nowrap}
+.nav-cta{border-radius:999px;padding:12px 16px;background:#203a3b;color:#fff!important;border-color:#203a3b}
+.nav-cta:hover{background:#b36e52;color:#fff!important}
+.mobile-toggle{color:#203a3b;align-items:center;justify-content:center;width:42px;height:42px;border:1px solid rgba(32,58,59,.15);border-radius:50%}
+.section{width:min(100%,1440px);margin-inline:auto;padding-inline:clamp(20px,5.4vw,78px)}
+.intro-grid,.section-heading{gap:clamp(28px,6vw,100px)}
+.intro-grid h2,.section-heading h2{font-size:clamp(36px,4.8vw,64px);line-height:1.06}
+.large-copy,.section-heading>p{max-width:490px;font-size:14px;line-height:1.95;color:#686f6a}
+.destinations-section{width:calc(100% - clamp(24px,5vw,80px));max-width:1440px;border-radius:30px;margin:0 auto 32px;padding:clamp(32px,5vw,72px)}
+.destination-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(14px,2vw,25px)}
+.destination-card{min-width:0;padding:0 0 16px;border-radius:18px;overflow:hidden;background:rgba(255,255,255,.7);border:1px solid rgba(38,55,51,.08);transition:transform .3s,box-shadow .3s}
+.destination-card:hover{transform:translateY(-6px);box-shadow:0 18px 38px rgba(32,46,49,.12)}
+.destination-card .card-image{overflow:hidden;border-radius:0 0 16px 16px;aspect-ratio:1.05}
+.destination-card .card-meta,.destination-card h3,.destination-card>p{margin-left:16px;margin-right:16px}
+.destination-card .card-meta{margin-top:15px}
+.destination-card h3{margin-top:12px;margin-bottom:4px;font-size:clamp(21px,2vw,28px)}
+.destination-card>p{margin-bottom:2px;font-size:12px;line-height:1.65}
+.experience-grid{gap:22px}
+.experience-card{min-width:0}
+.experience-image{aspect-ratio:1.18;overflow:hidden}
+.experience-image img{width:100%;height:100%;object-fit:cover}
+.experience-card h3{font-size:clamp(21px,2.2vw,30px);line-height:1.2}
+.experience-card p{font-size:13px;line-height:1.85;color:#6c716b}
+.travel-editorial{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.95fr);align-items:center;gap:clamp(40px,8vw,125px);padding-top:clamp(65px,9vw,125px);padding-bottom:clamp(65px,9vw,125px)}
+.editorial-copy{max-width:590px}
+.editorial-copy h2,.home-about h2{font-size:clamp(42px,5vw,68px);line-height:1.05;margin:18px 0 22px}
+.editorial-copy p,.home-about p{font-size:14px;line-height:2;color:#686f6a;max-width:560px}
+.editorial-link{display:inline-flex;align-items:center;gap:14px;margin-top:13px;padding-bottom:8px;border-bottom:1px solid #b66d55;color:#8d4f3b;font-size:12px;font-weight:700}
+.editorial-image-stack{position:relative;padding:0 0 34px 30px}
+.editorial-image-main{display:block;width:100%;height:clamp(340px,43vw,570px);object-fit:cover;border-radius:180px 180px 18px 18px;box-shadow:0 25px 60px rgba(36,46,40,.13)}
+.editorial-image-note{position:absolute;left:0;bottom:0;width:185px;padding:22px;background:#1d3a3d;color:#fff;border:5px solid var(--paper);border-radius:18px}
+.editorial-image-note .eyebrow{color:#e7c48c;font-size:8px}
+.editorial-image-note strong{display:block;font-family:var(--serif);font-size:25px;line-height:1.12;font-weight:400;margin-top:10px}
+.plan-section{width:calc(100% - clamp(24px,5vw,80px));max-width:1440px;margin:0 auto 40px;padding:0;border-radius:28px;background:#e9dfce;overflow:hidden}
+.plan-inner{position:relative;text-align:center;padding:clamp(55px,8vw,100px) 22px;background:radial-gradient(ellipse at 50% 0%,rgba(255,255,255,.68),transparent 60%)}
+.plan-inner h2{font-size:clamp(40px,5.2vw,70px);line-height:1.05;margin:18px 0}
+.plan-inner>p{max-width:570px;margin:0 auto 25px;font-size:14px;line-height:1.9;color:#626b64}
+.plan-footnote{display:flex;justify-content:center;align-items:center;gap:8px;margin-top:24px;color:#6f746c;font-size:10px;letter-spacing:.03em}
+.home-about{display:grid;grid-template-columns:150px minmax(0,1fr) 60px;gap:clamp(24px,5vw,75px);align-items:center;padding-top:70px;padding-bottom:80px}
+.about-mark{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;aspect-ratio:1;border:1px solid #c7ab7a;border-radius:50%;color:#9b6940;font-family:var(--serif);font-size:11px;letter-spacing:.14em}
+.home-about h2{margin:12px 0 16px}
+.home-about p{margin:0}
+.about-circle-link{display:grid;place-items:center;width:54px;height:54px;border:1px solid #c7ab7a;border-radius:50%;color:#8d4f3b;transition:background .2s,color .2s,transform .2s}
+.about-circle-link:hover{background:#203a3b;color:#fff;transform:rotate(45deg)}
+.city-page{overflow:clip}
+.city-hero{min-height:570px}
+.city-hero-image{width:100%;height:100%;object-fit:cover}
+.city-overview,.city-section,.city-info-grid,.city-feature-row,.city-gallery,.related-section,.local-tips-section{max-width:1440px;margin-inline:auto}
+.city-overview{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(320px,.8fr);align-items:start}
+.city-about{min-width:0}
+.city-about p{max-width:68ch;font-size:14px;line-height:2;color:#656e68}
+.city-facts{min-width:0}
+.city-section-head{margin-bottom:28px}
+.city-section-head h2{font-size:clamp(32px,4vw,48px);line-height:1.1}
+.city-section-head p{max-width:600px;font-size:13px;line-height:1.8;color:#6f746e}
+.city-photo-grid{align-items:stretch}
+.city-photo-card{min-width:0;overflow:hidden}
+.city-photo-copy h3{line-height:1.25}
+.city-photo-copy p{line-height:1.65}
+.activity-card{min-width:0}
+.activity-copy p{line-height:1.8}
+.city-info-grid{align-items:stretch}
+.info-panel{min-width:0}
+.shopping-row{align-items:center}
+.shopping-row>div,.season-row>div,.reach-row>div{min-width:0}
+.shopping-row span,.season-row span:not(.round-icon),.reach-row span:not(.round-icon){line-height:1.75}
+.itinerary-feature,.food-feature{min-width:0}
+.food-bubbles{align-items:start}
+.food-bubbles>div{min-width:0}
+.food-bubbles span{line-height:1.4}
+.city-gallery img{object-fit:cover;width:100%}
+.related-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.footer{max-width:1440px;margin:0 auto}
+.footer-top{gap:clamp(24px,5vw,75px)}
+@media(max-width:1080px){
+ .nav{gap:13px;font-size:11px}
+ .nav-cta{padding:10px 12px}
+ .destination-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .city-info-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:780px){
+ .header{height:70px}
+ .nav-wrap{padding-inline:20px}
+ .mobile-toggle{display:flex}
+ .nav{display:none;position:absolute;top:calc(100% + 1px);left:0;right:0;padding:14px 20px 22px;background:rgba(250,247,241,.98);backdrop-filter:blur(18px);border-bottom:1px solid rgba(35,53,51,.1);box-shadow:0 18px 30px rgba(32,46,49,.1);flex-direction:column;align-items:stretch;gap:0}
+ .nav.nav-open{display:flex}
+ .nav>a{padding:14px 8px;border-bottom:1px solid rgba(35,53,51,.08);font-size:13px}
+ .nav .nav-cta{justify-content:center;margin-top:12px;border:0}
+ .hero{min-height:650px;height:calc(88svh - 70px)}
+ .hero-content{padding:clamp(75px,17vw,120px) 7% 90px}
+ .hero-stamp{right:7%;top:auto;bottom:22px;width:100px;height:100px}
+ .section{padding-inline:22px}
+ .destinations-section{width:calc(100% - 24px);padding:26px 16px;border-radius:22px}
+ .destination-grid{gap:12px}
+ .destination-card .card-image{aspect-ratio:.78}
+ .destination-card .card-meta{font-size:8px;gap:8px}
+ .destination-card h3{font-size:21px}
+ .experience-grid{grid-template-columns:1fr}
+ .experience-image{aspect-ratio:1.3}
+ .travel-editorial{grid-template-columns:1fr;gap:34px}
+ .editorial-image-stack{max-width:600px;margin:auto;width:100%;padding-left:18px}
+ .editorial-image-main{height:400px}
+ .editorial-image-note{width:160px;padding:17px}
+ .plan-section{width:calc(100% - 24px)}
+ .home-about{grid-template-columns:70px minmax(0,1fr);gap:20px;padding-block:48px}
+ .about-mark{font-size:7px}
+ .about-mark svg{width:22px}
+ .about-circle-link{grid-column:2;width:45px;height:45px}
+ .city-overview{grid-template-columns:1fr}
+ .city-info-grid{grid-template-columns:1fr}
+ .related-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .footer-top{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .plan-footnote{line-height:1.7;flex-wrap:wrap}
+}
+@media(max-width:420px){
+ .destination-card .card-meta{flex-direction:column;align-items:flex-start}
+ .destination-card h3{font-size:19px}
+ .destination-card>p{font-size:11px}
+ .city-photo-grid,.activity-grid{grid-template-columns:1fr}
+ .city-photo-card{height:260px}
+ .related-grid{grid-template-columns:1fr}
+ .footer-top{grid-template-columns:1fr}
+ .city-stats>div{min-width:100%}
+ .editorial-image-main{height:330px}
+}
