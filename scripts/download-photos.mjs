@@ -3,7 +3,7 @@ import path from 'node:path';
 
 const root = process.cwd();
 const app = await readFile(path.join(root, 'src/App.jsx'), 'utf8');
-const ids = [...new Set(app.match(/photo-\\d+-[a-f0-9]+/g) || [])];
+const ids = [...new Set(app.match(/photo-[0-9]+-[a-f0-9]+/g) || [])];
 const output = path.join(root, 'public', 'images', 'photos');
 await mkdir(output, { recursive: true });
 
@@ -44,6 +44,6 @@ for (let i = 0; i < ids.length; i += 5) {
 }
 console.log(`Photos ready. Downloaded: ${downloaded}; already present: ${reused}; total referenced: ${ids.length}.`);
 if (failures.length) {
-    console.error('Could not download these photos:\\n' + failures.join('\\n'));
+  console.error('Could not download these photos:\\n' + failures.join('\\n'));
   process.exitCode = 1;
 }
