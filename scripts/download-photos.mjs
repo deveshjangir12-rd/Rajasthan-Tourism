@@ -3,7 +3,7 @@ import path from 'node:path';
 
 const root = process.cwd();
 const app = await readFile(path.join(root, 'src/App.jsx'), 'utf8');
-const ids = [...new Set(app.match(/photo-\\d{13,}/g) || [])];
+const ids = [...new Set(app.match(/photo-\d{13,}/g) || [])];
 const output = path.join(root, 'public', 'images', 'photos');
 await mkdir(output, { recursive: true });
 
