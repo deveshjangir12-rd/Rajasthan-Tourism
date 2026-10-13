@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Link,useParams} from 'react-router-dom';
+import {Link,useParams,Routes,Route} from 'react-router-dom';
 import {ArrowRight,ArrowUpRight,CalendarDays,Compass,Heart,MapPin,Plane,Train,Car,ShoppingBag,Utensils,Sun,Mountain,Landmark,Globe,Mail,Clock} from 'lucide-react';
 import {destinations} from './data';
 
