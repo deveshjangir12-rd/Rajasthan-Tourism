@@ -1,3 +1,4 @@
+import React from 'react';
 import {useMemo,useState} from 'react';
 import {Link,NavLink,Route,Routes,useParams} from 'react-router-dom';
 import {ArrowDown,ArrowRight,ArrowUpRight,CalendarDays,Compass,Heart,MapPin,Menu,Search,Sun,X} from 'lucide-react';
